@@ -1,0 +1,74 @@
+Tak prezentuje się czas działania quicksortu:
+
+Ilość liczb	Czas w sekundach	
+12		0.00000	
+21		0.00001	
+25		0.00001	
+100		0.00004	
+513		0.00012	
+100000		0.04385	
+1000000		1.05686	
+100000		63.42413	//posortowane
+
+
+
+
+
+/*********************************************/
+/*        SZCZEGÓŁY TECHNICZNE 	             */
+/*********************************************/
+
+
+$ wc *
+ 1000000  1000000  4888945 input
+      12       12       32 input2
+     100      100      487 input3
+     513      513     2511 input4
+      21       19       42 input5
+      25       25       59 input6
+  100000   100000   488928 input7
+  100000   100000   488928 input7_posortowane
+ 1000000  1000000  4888944 input_sort
+ 2200671  2200669 10758876 razem
+
+$ ../quick_sort/quick input ala
+PROCESS (quicksort):
+start            0    243346164 
+stop            1    300202051 
+czas 1.05686
+$ ../quick_sort/quick input2 ala
+PROCESS (quicksort):
+start            0      4058610 
+stop            0      4063020 
+czas 0.00000
+$ ../quick_sort/quick input3 ala
+PROCESS (quicksort):
+start            0      2033844 
+stop            0      2068930 
+czas 0.00004
+$ ../quick_sort/quick input4 ala
+PROCESS (quicksort):
+start            0      1448030 
+stop            0      1564947 
+czas 0.00012
+$ ../quick_sort/quick input5 ala
+PROCESS (quicksort):
+start            0      2002714 
+stop            0      2008706 
+czas 0.00001
+$ ../quick_sort/quick input6 ala
+PROCESS (quicksort):
+start            0      1991159 
+stop            0      2000064 
+czas 0.00001
+$ ../quick_sort/quick input7 ala
+PROCESS (quicksort):
+start            0     26933421 
+stop            0     70782260 
+czas 0.04385
+$ ../quick_sort/quick input7_posortowane ala
+PROCESS (quicksort):
+start            0     30149278 
+stop           60    612693041 
+czas 60.58254
+

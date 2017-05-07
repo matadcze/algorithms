@@ -1,0 +1,12 @@
+W pliku raport.ods znajdują się dokładne pomiary dla pliku
+nazwiska.txt. Tablicę T uzupełniałem danymi do 80% liczby M,
+która jest drugim argumentem (ARGV[2])
+$ ./ash nazwiska.txt M
+Podana jest również liczb pustych pól w tablicy.
+Wniosek:
+Jeżeli M jest małe a wczytano 80% z M danych, to 
+hash_search musi wykonać wiecej obiegów pętli,
+najlepiej to widać dla M równego 64.
+A na przykład dla 9598545 ilość prób wyszukiwania jest zerowa (czyli "bezpośredni" dostęp dostęp do nazwiska) przy czym wczytano 20 004 nazwisk.
+Gdy wielkość tablicy rośnie to wydłuża się czas wyszukiwania, przy czym
+zachowujemy zerową ilość prób znajdowania nazwisk.
